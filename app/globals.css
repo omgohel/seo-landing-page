@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.animate-scroll-y {
+  animation: scrollDown 16s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-90%);
+  }
+}
+
+img[src*="hero-illustration.svg"],
+img[alt="hero container"] {
+  animation: fadeIn 1s ease-out;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
