@@ -320,8 +320,8 @@ export default function HeroContainerSVG() {
       // Total animation duration calculation:
       // Dragging-Content-Line animations: 0.3s delay + 4.6s duration (0.6s animation + 4s pause) = 4.9s total
       // Last block animation ends at: 3.8s + 0.6s = 4.4s
-      // Wait for the longest animation to complete including pause: 4.9s + small buffer = 5.2s
-      const totalDuration = 5200; // 5.2 seconds in milliseconds to ensure pause completes before restart
+      // Wait for the longest animation to complete including pause: 4.9s + 5.5s additional pause = 10.4s
+      const totalDuration = 10400; // 10.4 seconds in milliseconds (4.9s animation + 5.5s additional pause before restart)
 
       // Reset all animated elements
       const animatedElementIds = [

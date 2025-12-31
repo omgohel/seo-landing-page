@@ -36,7 +36,7 @@ export default function Hero() {
           <h1 className="text-[28px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.15] tracking-tight text-gray-900">
             Attract long-tail traffic
           </h1>
-          <h1 className="text-[28px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight bg-clip-text text-transparent inline-block pb-2" style={{ backgroundImage: `linear-gradient(to right, ${COLORS.PRIMARY.PURPLE_500}, ${COLORS.PRIMARY.PURPLE_700})` }}>
+          <h1 className="text-[28px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight bg-clip-text text-transparent inline-block pb-2 md:pb-6" style={{ backgroundImage: `linear-gradient(to right, ${COLORS.PRIMARY.PURPLE_500}, ${COLORS.PRIMARY.PURPLE_700})` }}>
             with SEO pages at scale
           </h1>
         </div>
